@@ -1,5 +1,11 @@
 package com.maciejbandel.guidebook.model
 
+import java.time.LocalDate
+
 data class Travel(
-    val places: List<Place>
+    val id: Long,
+    val name: String,
+    val places: List<Place>,
+    val startDate: LocalDate,
+    val endDate: LocalDate
 )
